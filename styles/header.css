@@ -1,0 +1,26 @@
+
+.cabecalho {
+    background-color: white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+.cabecalho_conteiner{
+    display: flex;
+    flex-direction : row;
+    align-items: center;
+}
+
+.cabecalho_menu-hamburguer{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/Menu\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.cabecalho_link{
+    padding: 8px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeBooks/Gustavo Gonzaga</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_conteiner cabecalho_esquerdo">
+            <span class="cabecalho_menu-hamburguer"></span>
+            <img src="assets/Logo.svg" alt="Logo do Codebooks">
+        </div>
+        <div class="cabecalho_conteiner cabecalho_direito">
+            <a href="#" class="cabecalho_link"> 
+                <img src="assets/Favoritos.svg" alt="Favoritos"> 
+            </a>
+            <a href="#" class="cabecalho_link">
+                <img src="assets/Usuário.svg" alt="Usuário">
+            </a>
+            <a href="#" class="cabecalho_link">
+                <img src="assets/Sacola.svg" alt="Compras">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner_titulo">Já sabe por onde começar?</h2>
+            <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel_titulo">Novos lançamentos</h2>
+            <!--slider main container-->
+            <div class="swiper">
+                <!--additional required wrapper-->
+                <div class="swiper-wrapper">
+                    <!--slides-->
+                    <div class="swiper-slide"><img src="assets/Livros/Gestão.svg" alt="Gestão"></div>
+                    <div class="swiper-slide"><img src="assets/Livros/liderança.svg" alt="Liderança"></div>
+                    <div class="swiper-slide"><img src="assets/Livros/Portugol.svg" alt="Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/Livros/ReactNative.svg" alt="React Native"></div>
+                    <div class="swiper-slide"><img src="assets/Livros/UX.svg" alt="UX"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            // Swiper options
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // other options...
+        });
+    </script>
+</body>
+</html>
